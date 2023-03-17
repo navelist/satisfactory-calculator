@@ -2,9 +2,8 @@
 export {}
 
 import axios from 'axios';
-import { load, } from 'cheerio';
-// import { Element } from "domhandler";
-// import { Cheerio } from 'cheerio.js'
+import { load } from 'cheerio';
+import { writeFile } from 'fs'
 
 /** Has no recipes
  * https://satisfactory.fandom.com/wiki/Power_Slug
@@ -18,10 +17,12 @@ const URL_WIKI_ITEM_CATEGORIES = "https://satisfactory.fandom.com/wiki/Category:
 
 const R_MANY_I_MANY_O = "https://satisfactory.fandom.com/wiki/Encased_Uranium_Cell";
 const R_NO = "https://satisfactory.fandom.com/wiki/Power_Slug";
+const R_ALT = "https://satisfactory.fandom.com/wiki/Iron_Ingot";
 
 interface ItemPages {
     [id:string] : string
 }
+
 async function getItemPages(): Promise<ItemPages> {
     const html = await axios.get(URL_WIKI_ITEM_CATEGORIES);
     const cheerio = load(html.data);
@@ -52,7 +53,8 @@ interface Recipe {
     ingredients: any[],
     building: String,
     products: any[],
-    prerequisites: String
+    // prerequisites: String,
+    isAlternate: boolean
 }
 
 class Recipe {
@@ -61,6 +63,7 @@ class Recipe {
         this.ingredients = new Array<RecipeItem>();
         this.building = "";
         this.products = new Array<RecipeItem>();
+        this.isAlternate = false;
         // this.prerequisites = "";
     }
 
@@ -69,7 +72,10 @@ class Recipe {
     }
 }
 
-async function getItemRecipes(url: string) {
+/**
+ * It's quite complicated due to complex tr td structures...
+ */
+async function getItemRecipes(url: string): Promise<Array<Recipe> | null> {
     const html = await axios.get(url);
     const cheerio = load(html.data);
 
@@ -100,9 +106,11 @@ async function getItemRecipes(url: string) {
             data.push(lastRow);
 
             const curTdSizes = [...tdSizes];
+            
             let td = tr.children('td:first');
-
-            lastRow.recipe = td.text();
+            lastRow.recipe = td.text().replace("Alternate", "");
+            lastRow.isAlternate = (td.children().length > 0);
+            
 
             do {
                 td = td.next();
@@ -154,10 +162,25 @@ async function getItemRecipes(url: string) {
 
 async function parseSatisfactoryWiki() {
     const itemPages = await getItemPages();
-    Object.entries(itemPages).forEach(async entry => {
-        console.log( JSON.stringify(await getItemRecipes(entry[1]) ));
-    })
-    // console.log( await getItemRecipes(R_MANY_I_MANY_O) );
+    writeFile("./data/item_pages.json", JSON.stringify(itemPages), (err)=> {
+        console.error(err);
+    });
+
+    
+    Promise.all(Object.entries(itemPages).map(async entry => getItemRecipes(entry[1]))).then(
+        recipes => {
+            const items = recipes.filter(recipe=>recipe!=null).reduce((a,b)=> a.concat(b),new Array());
+
+            writeFile("./data/recipes.json", JSON.stringify(items), (err)=> {
+                console.error(err);
+            });
+        }
+    )
+
+    
+    
+    
+    // console.log( JSON.stringify(await getItemRecipes(R_ALT)) );
 }
 
 parseSatisfactoryWiki();
