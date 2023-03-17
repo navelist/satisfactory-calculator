@@ -1375,60 +1375,6 @@
         "isAlternate": false
     },
     {
-        "recipe": "Gas Mask",
-        "ingredients": [
-            {
-                "item": "Rubber",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Plastic",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Fabric",
-                "amountPerMinute": 0
-            }
-        ],
-        "building": "Equipment Workshop",
-        "products": [
-            {
-                "item": "Gas Mask",
-                "amountPerMinute": 0
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Hazmat Suit",
-        "ingredients": [
-            {
-                "item": "Rubber",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Plastic",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Alclad Aluminum Sheet",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Fabric",
-                "amountPerMinute": 0
-            }
-        ],
-        "building": "Equipment Workshop",
-        "products": [
-            {
-                "item": "Hazmat Suit",
-                "amountPerMinute": 0
-            }
-        ],
-        "isAlternate": false
-    },
-    {
         "recipe": "Heat Sink",
         "ingredients": [
             {
@@ -1556,35 +1502,6 @@
             }
         ],
         "isAlternate": true
-    },
-    {
-        "recipe": "Hover Pack",
-        "ingredients": [
-            {
-                "item": "Motor",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Heavy Modular Frame",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Computer",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Alclad Aluminum Sheet",
-                "amountPerMinute": 0
-            }
-        ],
-        "building": "Equipment Workshop",
-        "products": [
-            {
-                "item": "Hover Pack",
-                "amountPerMinute": 0
-            }
-        ],
-        "isAlternate": false
     },
     {
         "recipe": "The HUB",
@@ -1754,35 +1671,6 @@
             }
         ],
         "isAlternate": true
-    },
-    {
-        "recipe": "Jetpack",
-        "ingredients": [
-            {
-                "item": "Plastic",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Rubber",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Circuit Board",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Motor",
-                "amountPerMinute": 0
-            }
-        ],
-        "building": "Equipment Workshop",
-        "products": [
-            {
-                "item": "Jetpack",
-                "amountPerMinute": 0
-            }
-        ],
-        "isAlternate": false
     },
     {
         "recipe": "Biomass (Leaves)",
@@ -2064,31 +1952,6 @@
             {
                 "item": "Nuclear Pasta",
                 "amountPerMinute": 0.5
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Object Scanner",
-        "ingredients": [
-            {
-                "item": "Reinforced Iron Plate",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Wire",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Screw",
-                "amountPerMinute": 0
-            }
-        ],
-        "building": "Equipment Workshop",
-        "products": [
-            {
-                "item": "Object Scanner",
-                "amountPerMinute": 0
             }
         ],
         "isAlternate": false
@@ -3443,63 +3306,5 @@
             }
         ],
         "isAlternate": true
-    },
-    {
-        "recipe": "Xeno-Basher",
-        "ingredients": [
-            {
-                "item": "Modular Frame",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Xeno-Zapper",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Cable",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Wire",
-                "amountPerMinute": 0
-            }
-        ],
-        "building": "Equipment Workshop",
-        "products": [
-            {
-                "item": "Xeno-Basher",
-                "amountPerMinute": 0
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Xeno-Zapper",
-        "ingredients": [
-            {
-                "item": "Iron Rod",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Reinforced Iron Plate",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Cable",
-                "amountPerMinute": 0
-            },
-            {
-                "item": "Wire",
-                "amountPerMinute": 0
-            }
-        ],
-        "building": "Equipment Workshop",
-        "products": [
-            {
-                "item": "Xeno-Zapper",
-                "amountPerMinute": 0
-            }
-        ],
-        "isAlternate": false
     }
 ]

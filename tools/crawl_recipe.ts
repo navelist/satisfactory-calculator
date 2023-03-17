@@ -36,8 +36,8 @@ async function getItemPages(): Promise<ItemPages> {
 }
 
 interface RecipeItem {
-    item: String,
-    amountPerMinute : Number
+    item: string,
+    amountPerMinute : number
 }
 
 class RecipeItem {
@@ -49,10 +49,10 @@ class RecipeItem {
 }
 
 interface Recipe {
-    recipe: String,
-    ingredients: any[],
-    building: String,
-    products: any[],
+    recipe: string,
+    ingredients: RecipeItem[],
+    building: string,
+    products: RecipeItem[],
     // prerequisites: String,
     isAlternate: boolean
 }
@@ -84,7 +84,7 @@ async function getItemRecipes(url: string): Promise<Array<Recipe> | null> {
     }
 
     const trs = cheerio("div.mw-parser-output table.wikitable:first tr:first");
-    const tdSizes = new Array();
+    const tdSizes: Array<number> = [];
     for (let th = trs.children().first(); th.text(); th = th.next()) {
         const colspan = th.attr('colspan');
 
@@ -95,7 +95,7 @@ async function getItemRecipes(url: string): Promise<Array<Recipe> | null> {
         }
     }
    
-    let data = new Array();
+    const data: Array<Recipe> = [];
     let lastRow = new Recipe();
 
     for (let tr = trs.next(); tr.text(); tr = tr.next()) {
@@ -169,7 +169,10 @@ async function parseSatisfactoryWiki() {
     
     Promise.all(Object.entries(itemPages).map(async entry => getItemRecipes(entry[1]))).then(
         recipes => {
-            const items = recipes.filter(recipe=>recipe!=null).reduce((a,b)=> a.concat(b),new Array());
+            const items = recipes
+                .filter(recipe=>recipe!=null)
+                .reduce((a,b)=> b != null ? (a==null ? [] : a).concat(b) : a, new Array<Recipe>())
+                ?.filter(recipe => recipe.building !== "Equipment Workshop");
 
             writeFile("./data/recipes.json", JSON.stringify(items), (err)=> {
                 console.error(err);
