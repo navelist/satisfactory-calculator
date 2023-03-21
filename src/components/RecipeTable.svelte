@@ -1,6 +1,7 @@
 <script>
 // @ts-nocheck
     export let recipes;
+    export let images;
     $: console.log(recipes);
 </script>
 
@@ -27,6 +28,9 @@
         {#each recipe.ingredients as input}
         <td colspan={12/recipe.ingredients.length} class="input">
             <div>
+                <img src={images[input.item]} alt="">
+            </div>
+            <div>
                 {input.item}
             </div>
             <div>
@@ -37,6 +41,9 @@
         
         {#each recipe.products as output}
         <td colspan={12/recipe.products.length} class="output">
+            <div>
+                <img src={images[output.item]} alt="">
+            </div>
             <div>
                 {output.item}
             </div>
@@ -62,5 +69,9 @@
         padding-top: 20px;
         padding-bottom: 20px;
         text-align:center;
+    }
+    td div img {
+       width:40px;
+       height:40px; 
     }
 </style>

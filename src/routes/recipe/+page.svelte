@@ -13,7 +13,7 @@
 </script>
 
 <div>
-    <RecipeTable recipes={data.recipes}/>
+    <RecipeTable recipes={data.recipes} images={data.images}/>
     
-    <RecipeTable recipes={data.alternateRecipes}/>
+    <RecipeTable recipes={data.alternateRecipes} images={data.images}/>
 </div>
