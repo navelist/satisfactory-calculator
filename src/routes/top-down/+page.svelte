@@ -4,19 +4,20 @@
 </svelte:head>
 
 <script lang="ts">
-	import { onMount } from "svelte";
 	import ItemInput from "../../components/ItemInput.svelte";
+	import TopDownGraph from "../../components/TopDownGraph.svelte";
 
     /** @type {import('./$types').PageData} */
     export let data;
 
     let selectedItem = "";
+    let selectedItemToShow = "";
     function onItemSelected(){
         if (selectedItem && data.items.includes(selectedItem)) {
-            console.log("Valid Item selected : " + selectedItem);
+            selectedItemToShow = selectedItem;
         }
     }
-    onMount(onItemSelected);
 </script>
 
 <ItemInput bind:inputValue={selectedItem} on:submit={onItemSelected}/>
+<TopDownGraph bind:selectedItem={selectedItemToShow}/>

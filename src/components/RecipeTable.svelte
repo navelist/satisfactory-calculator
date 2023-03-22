@@ -2,7 +2,6 @@
 // @ts-nocheck
     export let recipes;
     export let images;
-    $: console.log(recipes);
 </script>
 
 <table>

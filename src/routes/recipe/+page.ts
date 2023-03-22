@@ -5,14 +5,14 @@ export const prerender = true;
 
 import RECIPES from "../../../data/recipes.json";
 import IMAGES from "../../../data/images.json";
-import { Recipe } from "../../scripts/types";
+import { RawRecipe } from "../../scripts/types";
 
 
 /** @type {import('./$types').PageLoad} */
 export function load() {
     return {
-        recipes : RECIPES.filter((recipe: Recipe) => !recipe.isAlternate),
-        alternateRecipes : RECIPES.filter((recipe: Recipe) => recipe.isAlternate),
+        recipes : RECIPES.filter((recipe: RawRecipe) => !recipe.isAlternate),
+        alternateRecipes : RECIPES.filter((recipe: RawRecipe) => recipe.isAlternate),
         images: IMAGES
     }
 }
