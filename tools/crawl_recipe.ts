@@ -44,6 +44,7 @@ async function getItemPages(): Promise<ItemPages> {
         "The HUB"
     ];
     const missingItemsToPage = missingItems.map(
+        // @ts-ignore
         item => [item, URL_WIKI + "/" + item.replaceAll(" ", "_")]
     )
     
