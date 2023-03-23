@@ -37,15 +37,19 @@ export class RawRecipe {
     }
 }
 
-export interface RecipeMap {
+export interface RecipesMap {
     [item: string]: Recipe
+}
+
+export interface ItemsComplexityMap {
+    [item: string]: number
 }
 
 export interface Recipe {
     product: RecipeItem,
     byproduct: RecipeItem | null,
     ingredients: RecipeItem[],
-    complexity: number,
+    // complexity: number,
 }
 
 // export interface Production {

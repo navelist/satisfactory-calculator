@@ -11,6 +11,9 @@ import ITEM_PAGES from "../../../data/item_pages.json";
 /** @type {import('./$types').PageLoad} */
 export function load() {
     return {
-        items : Object.keys(ITEM_PAGES)
+        items : Object.keys(ITEM_PAGES),
+        // images: IMAGES,
+        // recipesA : TestingRecipesA,
+        // recipesB : TestingRecipesB 
     }
 }

@@ -11,7 +11,8 @@
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"crawl": "node --loader ts-node/esm tools/crawl_recipe.ts"
+		"crawl": "node --loader ts-node/esm tools/crawl_recipe.ts",
+		"codetest": "node --loader ts-node/esm tools/codetest.ts"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
