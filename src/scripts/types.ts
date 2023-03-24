@@ -52,8 +52,9 @@ export interface Recipe {
     // complexity: number,
 }
 
-// export interface Production {
-//     product: RecipeItem,
-//     byproduct: RecipeItem | null,
-//     ingredients: RecipeItem[],
-// }
+export interface ProductionNode {
+    product: RecipeItem,
+    count: number,
+    byproduct: RecipeItem | null,
+    ingredients: ProductionNode[],
+}

@@ -3,6 +3,7 @@ import _ITEM_PAGES from "../../data/item_pages.json" assert {type:"json"};
 
 // @ts-ignore
 import { RawRecipe, type RecipeItem, type RecipesMap, type Recipe, type ItemsComplexityMap } from "./types.ts";
+import type { ProductionNode } from "./types";
 
 const ITEMS = Object.keys(_ITEM_PAGES);
 export const PrimaryRecipesMap: RecipesMap = generateRecipeMapFromProduct(reducePrimaryRecipes());
@@ -69,7 +70,44 @@ function markComplexity(recipesMap: RecipesMap) {
     return itemsComplexity;
 }
 
+export function getProductionTree(item: string, amount = 0): ProductionNode {
+    if (!PrimaryRecipesMap[item]) { // Leaf node - Basic resource (e.g. ore)
+        const count = roundUpTo2nd(amount / 60);
+        return {
+            product: {item: item, amountPerMinute: count * 60},
+            count: count, // I'm going to et 60 as basic production unit
+            byproduct: null,
+            ingredients: []
+        }
+    }
+    const recipe = PrimaryRecipesMap[item];
+    if (!amount) {
+        amount = recipe.product.amountPerMinute;
+    }
+    const count = roundUpTo2nd(amount / recipe.product.amountPerMinute);
+    amount = count * recipe.product.amountPerMinute; // Re-calculate after decimal round up
+    const byproduct = (!recipe.byproduct ? null : {item:recipe.byproduct.item, amountPerMinute:recipe.byproduct.amountPerMinute * count});
+    const ingredients = recipe.ingredients.map((childRecipe: RecipeItem)=>
+        getProductionTree(childRecipe.item, childRecipe.amountPerMinute * count)
+    )
+    return {
+        product: {
+            item: item, 
+            amountPerMinute: amount
+        },
+        count,
+        byproduct,
+        ingredients
+    }
+}
+
+function roundUpTo2nd(number: number): number {
+    if (number % 1==0) {
+        return number;
+    }
+    return Math.ceil(number * 100)/100;
+}
 export function run() {
     // reduceAlternateRecipes();
-    console.log(PrimaryItemsCompleixty);
+    console.log(getProductionTree("Reinforced Iron Plate"));
 }
