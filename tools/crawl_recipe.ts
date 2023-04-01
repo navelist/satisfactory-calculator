@@ -176,6 +176,7 @@ async function getItemRecipes(url: string): Promise<Array<Recipe> | null> {
     return data;
 }
 
+
 async function getItemImages(item: string, url: string) {
     const html = await axios.get(url);
     const cheerio = load(html.data);
@@ -197,6 +198,7 @@ async function parseSatisfactoryWiki() {
     writeFile("./data/item_pages.json", JSON.stringify(itemPages), (err)=> {
         console.error(err);
     });
+
 
     Promise.all(Object.entries(itemPages).map(async entry => getItemRecipes(entry[1]))).then(
         recipes => {
@@ -221,7 +223,6 @@ async function parseSatisfactoryWiki() {
             });
         }
     );
-
 }
 
 parseSatisfactoryWiki();
