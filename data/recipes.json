@@ -3306,5 +3306,416 @@
             }
         ],
         "isAlternate": true
+    },
+    {
+        "recipe": "Encased Uranium Cell",
+        "ingredients": [
+            {
+                "item": "Uranium",
+                "amountPerMinute": 50
+            },
+            {
+                "item": "Concrete",
+                "amountPerMinute": 15
+            },
+            {
+                "item": "Sulfuric Acid",
+                "amountPerMinute": 40
+            }
+        ],
+        "building": "Blender",
+        "products": [
+            {
+                "item": "Encased Uranium Cell",
+                "amountPerMinute": 25
+            },
+            {
+                "item": "Sulfuric Acid",
+                "amountPerMinute": 10
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Sulfuric Acid",
+        "ingredients": [
+            {
+                "item": "Sulfur",
+                "amountPerMinute": 50
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 50
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Sulfuric Acid",
+                "amountPerMinute": 50
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Unpackage Sulfuric Acid",
+        "ingredients": [
+            {
+                "item": "Packaged Sulfuric Acid",
+                "amountPerMinute": 60
+            }
+        ],
+        "building": "Packager",
+        "products": [
+            {
+                "item": "Sulfuric Acid",
+                "amountPerMinute": 60
+            },
+            {
+                "item": "Empty Canister",
+                "amountPerMinute": 60
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Alumina Solution",
+        "ingredients": [
+            {
+                "item": "Bauxite",
+                "amountPerMinute": 120
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 180
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Alumina Solution",
+                "amountPerMinute": 120
+            },
+            {
+                "item": "Silica",
+                "amountPerMinute": 50
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Unpackage Alumina Solution",
+        "ingredients": [
+            {
+                "item": "Packaged Alumina Solution",
+                "amountPerMinute": 120
+            }
+        ],
+        "building": "Packager",
+        "products": [
+            {
+                "item": "Alumina Solution",
+                "amountPerMinute": 120
+            },
+            {
+                "item": "Empty Canister",
+                "amountPerMinute": 120
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Sloppy Alumina",
+        "ingredients": [
+            {
+                "item": "Bauxite",
+                "amountPerMinute": 200
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 200
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Alumina Solution",
+                "amountPerMinute": 240
+            }
+        ],
+        "isAlternate": true
+    },
+    {
+        "recipe": "Fuel",
+        "ingredients": [
+            {
+                "item": "Crude Oil",
+                "amountPerMinute": 60
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Fuel",
+                "amountPerMinute": 40
+            },
+            {
+                "item": "Polymer Resin",
+                "amountPerMinute": 30
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Residual Fuel",
+        "ingredients": [
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 60
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Fuel",
+                "amountPerMinute": 40
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Unpackage Fuel",
+        "ingredients": [
+            {
+                "item": "Packaged Fuel",
+                "amountPerMinute": 60
+            }
+        ],
+        "building": "Packager",
+        "products": [
+            {
+                "item": "Fuel",
+                "amountPerMinute": 60
+            },
+            {
+                "item": "Empty Canister",
+                "amountPerMinute": 60
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Diluted Fuel",
+        "ingredients": [
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 50
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 100
+            }
+        ],
+        "building": "Blender",
+        "products": [
+            {
+                "item": "Fuel",
+                "amountPerMinute": 100
+            }
+        ],
+        "isAlternate": true
+    },
+    {
+        "recipe": "Unpackage Heavy Oil Residue",
+        "ingredients": [
+            {
+                "item": "Packaged Heavy Oil Residue",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Packager",
+        "products": [
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 20
+            },
+            {
+                "item": "Empty Canister",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Plastic",
+        "ingredients": [
+            {
+                "item": "Crude Oil",
+                "amountPerMinute": 30
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Plastic",
+                "amountPerMinute": 20
+            },
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 10
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Rubber",
+        "ingredients": [
+            {
+                "item": "Crude Oil",
+                "amountPerMinute": 30
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Rubber",
+                "amountPerMinute": 20
+            },
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Heavy Oil Residue",
+        "ingredients": [
+            {
+                "item": "Crude Oil",
+                "amountPerMinute": 30
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 40
+            },
+            {
+                "item": "Polymer Resin",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": true
+    },
+    {
+        "recipe": "Polymer Resin",
+        "ingredients": [
+            {
+                "item": "Crude Oil",
+                "amountPerMinute": 60
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Polymer Resin",
+                "amountPerMinute": 130
+            },
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": true
+    },
+    {
+        "recipe": "Liquid Biofuel",
+        "ingredients": [
+            {
+                "item": "Solid Biofuel",
+                "amountPerMinute": 90
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 45
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Liquid Biofuel",
+                "amountPerMinute": 60
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Unpackage Liquid Biofuel",
+        "ingredients": [
+            {
+                "item": "Packaged Liquid Biofuel",
+                "amountPerMinute": 60
+            }
+        ],
+        "building": "Packager",
+        "products": [
+            {
+                "item": "Liquid Biofuel",
+                "amountPerMinute": 60
+            },
+            {
+                "item": "Empty Canister",
+                "amountPerMinute": 60
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Nitric Acid",
+        "ingredients": [
+            {
+                "item": "Nitrogen Gas",
+                "amountPerMinute": 120
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 30
+            },
+            {
+                "item": "Iron Plate",
+                "amountPerMinute": 10
+            }
+        ],
+        "building": "Blender",
+        "products": [
+            {
+                "item": "Nitric Acid",
+                "amountPerMinute": 30
+            }
+        ],
+        "isAlternate": false
+    },
+    {
+        "recipe": "Unpackage Nitric Acid",
+        "ingredients": [
+            {
+                "item": "Packaged Nitric Acid",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Packager",
+        "products": [
+            {
+                "item": "Nitric Acid",
+                "amountPerMinute": 20
+            },
+            {
+                "item": "Empty Fluid Tank",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
     }
 ]

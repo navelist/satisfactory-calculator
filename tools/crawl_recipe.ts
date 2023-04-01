@@ -30,9 +30,25 @@ async function getItemPages(): Promise<ItemPages> {
     const itemCategories = cheerio("div#mw-pages div.mw-content-ltr div.mw-category a");
     const itemToPage = itemCategories.toArray()
         .map((element) => [element.attribs['title'], URL_WIKI + element.attribs['href']])
-        .reduce((a,b) => Object.assign(a, { [b[0]] : b[1] }), {})
+        
     
-    return itemToPage;
+    const missingItems: string[] = [
+        "Water",
+        "Sulfuric Acid",
+        "Alumina Solution",
+        "Nitrogen Gas",
+        "Fuel",
+        "Heavy Oil Residue",
+        "Liquid Biofuel",
+        "Nitric Acid", 
+        "The HUB"
+    ];
+    const missingItemsToPage = missingItems.map(
+        // @ts-ignore
+        item => [item, URL_WIKI + "/" + item.replaceAll(" ", "_")]
+    )
+    
+    return itemToPage.concat(missingItemsToPage).reduce((a,b) => Object.assign(a, { [b[0]] : b[1] }), {});;
 }
 
 interface RecipeItem {
@@ -160,13 +176,30 @@ async function getItemRecipes(url: string): Promise<Array<Recipe> | null> {
     return data;
 }
 
+
+async function getItemImages(item: string, url: string) {
+    const html = await axios.get(url);
+    const cheerio = load(html.data);
+    let imageUrl = cheerio("figure.pi-item:first").children("a:first").attr("href");
+    try {
+        // @ts-ignore
+        imageUrl = imageUrl.match("[\\w-/.:]+.(png|gif)")[0]
+    } catch (error) {
+        console.error("error while reading " + url + imageUrl);
+        console.error(error);
+    }
+    return {
+        [item]: imageUrl
+    }
+}
+
 async function parseSatisfactoryWiki() {
     const itemPages = await getItemPages();
     writeFile("./data/item_pages.json", JSON.stringify(itemPages), (err)=> {
         console.error(err);
     });
 
-    
+
     Promise.all(Object.entries(itemPages).map(async entry => getItemRecipes(entry[1]))).then(
         recipes => {
             const items = recipes
@@ -180,10 +213,16 @@ async function parseSatisfactoryWiki() {
         }
     )
 
-    
-    
-    
-    // console.log( JSON.stringify(await getItemRecipes(R_ALT)) );
+    Promise.all(
+        Object.entries(itemPages).map(entry => getItemImages(entry[0], entry[1]))
+    ).then(
+        itemImages => {
+            const images = itemImages.reduce((a,b)=> Object.assign(a, b), new Object());
+            writeFile("./data/images.json", JSON.stringify(images), (err)=> {
+                console.error(err);
+            });
+        }
+    );
 }
 
 parseSatisfactoryWiki();

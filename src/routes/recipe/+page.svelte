@@ -4,7 +4,7 @@
 </svelte:head>
 
 <script>
-	import RecipeTable from '../components/RecipeTable.svelte';
+	import RecipeTable from '../../components/RecipeTable.svelte';
 
     
     

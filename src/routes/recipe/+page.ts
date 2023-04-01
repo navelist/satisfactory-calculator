@@ -3,9 +3,9 @@
 // it so that it gets served as a static asset in production
 export const prerender = true;
 
-import RECIPES from "../../data/recipes.json";
-import IMAGES from "../../data/images.json";
-import { RawRecipe } from "../scripts/types";
+import RECIPES from "../../../data/recipes.json";
+import IMAGES from "../../../data/images.json";
+import { RawRecipe } from "../../scripts/types";
 
 
 /** @type {import('./$types').PageLoad} */
