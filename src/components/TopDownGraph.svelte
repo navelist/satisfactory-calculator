@@ -1,14 +1,16 @@
 <script lang="ts">
-    import { getProductionTree, PrimaryItemsCompleixty } from "../scripts/functions"
+    
 	import type { ProductionNode } from "../scripts/types";
+    import { getProductionTree, PrimaryItemsCompleixty } from "../scripts/functions"
 
     // Assume selectedItem is given as valid item name
     export let selectedItem = "";
+    export let images;
+    export let productionTree: ProductionNode; 
     
     type GridCell = (ProductionNode | string)
     type Grid = GridCell[][]
 
-    let productionTree: ProductionNode;
     let showGrid: Grid = [[]];
     let maxComplexity: number; // +1 from here is td count
     let maxLeafNodes: number; // tr count
@@ -91,12 +93,15 @@
 </script>
 
 <div class="TopDownGraphDiv">
+    <h2>
+        Production Graph (Scrollable)
+    </h2>
     <table>
         <tbody>
             {#each showGrid as row}
             <tr>
                 {#each row as col}
-                <td>
+                <td class="outer">
                     {#if typeof(col)==="string"}
                     {col}
                     {:else}
@@ -111,24 +116,32 @@
                                 </div>
                             </td>
                             <td class="item">
-                                {col.product.item}
+                                <div>
+                                    <img src={images[col.product.item]} alt="">
+                                </div>
+                                <div>
+                                    {col.product.item}
+                                </div>
                             </td>
                             <td class="amount">
                                 {col.product.amountPerMinute.toFixed(2)} / min
                             </td>
                         </tr>
+                        {#if col.byproduct}
                         <tr>
                             <td>
-                                {#if col.byproduct}
+                                <div>
+                                    <img src={images[col.byproduct.item]} alt="">
+                                </div>
+                                <div>
                                     {col.byproduct.item}
-                                {/if}
+                                </div>
                             </td>
                             <td>
-                                {#if col.byproduct}
-                                    {col.byproduct.amountPerMinute.toFixed(2)} / min
-                                {/if}
+                                {col.byproduct.amountPerMinute.toFixed(2)} / min
                             </td>
                         </tr>
+                        {/if}
                     </table>
                     {/if}
                 </td>
@@ -140,6 +153,9 @@
 </div>
 
 <style>
+    h2 {
+        font-size: larger;
+    }
     .TopDownGraphDiv {
         display:block;
         overflow:auto;
@@ -150,11 +166,24 @@
     table.itemnode {
         background-color: darkgray;
     }
+    
+    td.outer {
+        height:100px;
+    }
+    td.outer:nth-child(even) {
+        width:300px;
+    }
+
     .itemnode td{
         padding-left:10px;
         padding-right:10px;
     }
     .itemnode td.item {
         width: 100px;
+        height: 100px
+    }
+    img {
+        width:30px;
+        height:30px;
     }
 </style>

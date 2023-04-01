@@ -4,12 +4,14 @@
 </svelte:head>
 
 <script lang="ts">
-	import ItemInput from "../../components/ItemInput.svelte";
+	import BottomUpGraph from "../../components/BottomUpGraph.svelte";
+import ItemInput from "../../components/ItemInput.svelte";
 	import TopDownGraph from "../../components/TopDownGraph.svelte";
+	import type { ProductionNode } from "../../scripts/types";
 
     /** @type {import('./$types').PageData} */
     export let data;
-
+    let productionTree: ProductionNode;
     let selectedItem = "";
     let selectedItemToShow = "";
     function onItemSelected(){
@@ -20,4 +22,6 @@
 </script>
 
 <ItemInput bind:inputValue={selectedItem} on:submit={onItemSelected}/>
-<TopDownGraph bind:selectedItem={selectedItemToShow}/>
+
+<TopDownGraph bind:selectedItem={selectedItemToShow} bind:productionTree={productionTree} bind:images={data.images}/>
+<BottomUpGraph bind:productionTree={productionTree} bind:images={data.images}/>
