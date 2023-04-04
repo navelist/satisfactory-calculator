@@ -1,1 +1,0 @@
-import{_ as r}from"./recipes.93e3cb00.js";import{I as t}from"./images.1037bb61.js";const o=!0;function a(){return{recipes:r.filter(e=>!e.isAlternate),alternateRecipes:r.filter(e=>e.isAlternate),images:t}}const n=Object.freeze(Object.defineProperty({__proto__:null,load:a,prerender:o},Symbol.toStringTag,{value:"Module"}));export{n as _,a as l,o as p};
