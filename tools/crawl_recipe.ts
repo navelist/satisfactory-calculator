@@ -3,6 +3,7 @@ export {}
 
 import axios from 'axios';
 import { load } from 'cheerio';
+import { type Cheerio } from 'cheerio';
 import { writeFile } from 'fs'
 
 /** Has no recipes
@@ -95,9 +96,11 @@ async function getItemRecipes(url: string): Promise<Array<Recipe> | null> {
     const html = await axios.get(url);
     const cheerio = load(html.data);
 
-    if (!cheerio("div.mw-parser-output").children('h3:first').text().includes("Crafting")) {
+    if (!cheerio("div.mw-parser-output").text().includes("Crafting")) {
+        console.log("Skipping this url as Crafting section not found : ", url)
         return null;
     }
+    console.log("Parsing from : ", url)
 
     const trs = cheerio("div.mw-parser-output table.wikitable:first tr:first");
     const tdSizes: Array<number> = [];
@@ -172,7 +175,10 @@ async function getItemRecipes(url: string): Promise<Array<Recipe> | null> {
             }
         }
     }
-    
+    // console.log("Parsed ", data.length, " recipes");
+    // for (const recipe of data) {
+    //     console.log(recipe.recipe);
+    // }
     return data;
 }
 
@@ -203,10 +209,15 @@ async function parseSatisfactoryWiki() {
     Promise.all(Object.entries(itemPages).map(async entry => getItemRecipes(entry[1]))).then(
         recipes => {
             const items = recipes
+                .filter(recipes=>recipes!=null)
+                .flat()
                 .filter(recipe=>recipe!=null)
-                .reduce((a,b)=> b != null ? (a==null ? [] : a).concat(b) : a, new Array<Recipe>())
-                ?.filter(recipe => recipe.building !== "Equipment Workshop");
-
+                //@ts-ignore
+                .filter(recipe => recipe.building !== "Equipment Workshop")
+                //@ts-ignore
+                .map(recipe => { return { [recipe.recipe] : recipe}})
+                .reduce((a,b)=> Object.assign(a, b), {});
+            console.log(items);
             writeFile("./data/recipes.json", JSON.stringify(items), (err)=> {
                 console.error(err);
             });
@@ -226,4 +237,3 @@ async function parseSatisfactoryWiki() {
 }
 
 parseSatisfactoryWiki();
-

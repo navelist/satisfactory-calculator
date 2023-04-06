@@ -3,17 +3,14 @@
 	<meta name="description" content="List of recipes" />
 </svelte:head>
 
-<script>
+<script lang="ts">
 	import RecipeTable from '../../components/RecipeTable.svelte';
-
-    
-    
-    /** @type {import('./$types').PageData} */
-    export let data;
+    import IMAGES from "../../../data/images.json";
+    import { PrimaryRecipesArray, AlternateRecipesArray } from "../../scripts/functions"
 </script>
 
 <div>
-    <RecipeTable recipes={data.recipes} images={data.images}/>
+    <RecipeTable recipes={PrimaryRecipesArray} images={IMAGES}/>
     
-    <RecipeTable recipes={data.alternateRecipes} images={data.images}/>
+    <RecipeTable recipes={AlternateRecipesArray} images={IMAGES}/>
 </div>

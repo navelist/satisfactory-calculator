@@ -6,22 +6,35 @@ import { RawRecipe, type RecipeItem, type RecipesMap, type Recipe, type ItemsCom
 import type { ProductionNode } from "./types";
 
 const ITEMS = Object.keys(_ITEM_PAGES);
-export const PrimaryRecipesMap: RecipesMap = generateRecipeMapFromProduct(reducePrimaryRecipes());
+export const PrimaryRecipesArray: Recipe[] = reducePrimaryRecipes();
+export const PrimaryRecipesMap: RecipesMap = generateRecipeMapFromProduct(PrimaryRecipesArray);
+export const AlternateRecipesArray: Recipe[] = reduceAlternateRecipes();
+export const AlternateRecipesMap: RecipesMap = generateRecipeMapFromProduct(AlternateRecipesArray);
 export const PrimaryItemsCompleixty: ItemsComplexityMap = markComplexity(PrimaryRecipesMap);
 
+/**
+ * -- Exclude lists--
+ * Alien DNA Capsule
+ * **Protein
+ * Beacon
+ * Biomass
+ * Color Cartridge
+ * The HUB
+ * **Nobelisk
+ * Power Shard
+ * Rebar
+ * Ammo
+ * 
+ * + additional excludes
+ * **Unpackaged**
+ */
+
 function reducePrimaryRecipes(): RawRecipe[] {
-    const primaryRecipes: RawRecipe[] = [];
-    const duplicate = new Set<string>();
-    for (const recipe of 
-            _RECIPES.filter(recipe=>!recipe.isAlternate)
-                    .filter(recipe=>!recipe.recipe.includes("Unpackage"))
-    ) {
-        if (!duplicate.has(recipe.recipe)) {
-            primaryRecipes.push(recipe);
-        }
-        duplicate.add(recipe.recipe);
-    }
-    return primaryRecipes;
+    return Object.values(_RECIPES).filter(recipe=>!recipe.isAlternate).filter(recipe=>!recipe.recipe.includes("Unpackage"));
+}
+
+function reduceAlternateRecipes(): RawRecipe[] {
+    return Object.values(_RECIPES).filter(recipe=>recipe.isAlternate);
 }
 
 function generateRecipeMapFromProduct(rawRecipes: RawRecipe[]) {

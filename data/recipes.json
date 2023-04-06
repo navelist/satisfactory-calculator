@@ -1,5 +1,5 @@
-[
-    {
+{
+    "Adaptive Control Unit": {
         "recipe": "Adaptive Control Unit",
         "ingredients": [
             {
@@ -28,7 +28,28 @@
         ],
         "isAlternate": false
     },
-    {
+    "AI Limiter": {
+        "recipe": "AI Limiter",
+        "ingredients": [
+            {
+                "item": "Copper Sheet",
+                "amountPerMinute": 25
+            },
+            {
+                "item": "Quickwire",
+                "amountPerMinute": 100
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "AI Limiter",
+                "amountPerMinute": 5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Alclad Aluminum Sheet": {
         "recipe": "Alclad Aluminum Sheet",
         "ingredients": [
             {
@@ -49,7 +70,92 @@
         ],
         "isAlternate": false
     },
-    {
+    "Alien DNA Capsule": {
+        "recipe": "Alien DNA Capsule",
+        "ingredients": [
+            {
+                "item": "Alien Protein",
+                "amountPerMinute": 10
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Alien DNA Capsule",
+                "amountPerMinute": 10
+            }
+        ],
+        "isAlternate": false
+    },
+    "Hog Protein": {
+        "recipe": "Hog Protein",
+        "ingredients": [
+            {
+                "item": "Hog Remains",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Alien Protein",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    "Spitter Protein": {
+        "recipe": "Spitter Protein",
+        "ingredients": [
+            {
+                "item": "Plasma Spitter Remains",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Alien Protein",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    "Hatcher Protein": {
+        "recipe": "Hatcher Protein",
+        "ingredients": [
+            {
+                "item": "Hatcher Remains",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Alien Protein",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    "Stinger Protein": {
+        "recipe": "Stinger Protein",
+        "ingredients": [
+            {
+                "item": "Stinger Remains",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Alien Protein",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    "Aluminum Casing": {
         "recipe": "Aluminum Casing",
         "ingredients": [
             {
@@ -66,7 +172,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Alclad Casing": {
         "recipe": "Alclad Casing",
         "ingredients": [
             {
@@ -87,7 +193,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Aluminum Ingot": {
         "recipe": "Aluminum Ingot",
         "ingredients": [
             {
@@ -108,7 +214,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Pure Aluminum Ingot": {
         "recipe": "Pure Aluminum Ingot",
         "ingredients": [
             {
@@ -125,7 +231,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Aluminum Scrap": {
         "recipe": "Aluminum Scrap",
         "ingredients": [
             {
@@ -150,7 +256,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Electrode - Aluminum Scrap": {
         "recipe": "Electrode - Aluminum Scrap",
         "ingredients": [
             {
@@ -175,7 +281,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Instant Scrap": {
         "recipe": "Instant Scrap",
         "ingredients": [
             {
@@ -208,7 +314,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Assembly Director System": {
         "recipe": "Assembly Director System",
         "ingredients": [
             {
@@ -229,7 +335,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Automated Wiring": {
         "recipe": "Automated Wiring",
         "ingredients": [
             {
@@ -250,7 +356,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Automated Speed Wiring": {
         "recipe": "Automated Speed Wiring",
         "ingredients": [
             {
@@ -275,7 +381,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Battery": {
         "recipe": "Battery",
         "ingredients": [
             {
@@ -304,7 +410,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Classic Battery": {
         "recipe": "Classic Battery",
         "ingredients": [
             {
@@ -333,7 +439,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Beacon": {
         "recipe": "Beacon",
         "ingredients": [
             {
@@ -362,7 +468,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Crystal Beacon": {
         "recipe": "Crystal Beacon",
         "ingredients": [
             {
@@ -387,7 +493,117 @@
         ],
         "isAlternate": true
     },
-    {
+    "Biomass (Leaves)": {
+        "recipe": "Biomass (Leaves)",
+        "ingredients": [
+            {
+                "item": "Leaves",
+                "amountPerMinute": 120
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Biomass",
+                "amountPerMinute": 60
+            }
+        ],
+        "isAlternate": false
+    },
+    "Biomass (Wood)": {
+        "recipe": "Biomass (Wood)",
+        "ingredients": [
+            {
+                "item": "Wood",
+                "amountPerMinute": 60
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Biomass",
+                "amountPerMinute": 300
+            }
+        ],
+        "isAlternate": false
+    },
+    "Biomass (Mycelia)": {
+        "recipe": "Biomass (Mycelia)",
+        "ingredients": [
+            {
+                "item": "Mycelia",
+                "amountPerMinute": 150
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Biomass",
+                "amountPerMinute": 150
+            }
+        ],
+        "isAlternate": false
+    },
+    "Biomass (Alien Protein)": {
+        "recipe": "Biomass (Alien Protein)",
+        "ingredients": [
+            {
+                "item": "Alien Protein",
+                "amountPerMinute": 15
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Biomass",
+                "amountPerMinute": 1500
+            }
+        ],
+        "isAlternate": false
+    },
+    "Black Powder": {
+        "recipe": "Black Powder",
+        "ingredients": [
+            {
+                "item": "Coal",
+                "amountPerMinute": 15
+            },
+            {
+                "item": "Sulfur",
+                "amountPerMinute": 15
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Black Powder",
+                "amountPerMinute": 30
+            }
+        ],
+        "isAlternate": false
+    },
+    "Fine Black Powder": {
+        "recipe": "Fine Black Powder",
+        "ingredients": [
+            {
+                "item": "Sulfur",
+                "amountPerMinute": 7.5
+            },
+            {
+                "item": "Compacted Coal",
+                "amountPerMinute": 3.75
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Black Powder",
+                "amountPerMinute": 15
+            }
+        ],
+        "isAlternate": true
+    },
+    "Cable": {
         "recipe": "Cable",
         "ingredients": [
             {
@@ -404,7 +620,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Coated Cable": {
         "recipe": "Coated Cable",
         "ingredients": [
             {
@@ -425,7 +641,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Insulated Cable": {
         "recipe": "Insulated Cable",
         "ingredients": [
             {
@@ -446,7 +662,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Quickwire Cable": {
         "recipe": "Quickwire Cable",
         "ingredients": [
             {
@@ -467,7 +683,45 @@
         ],
         "isAlternate": true
     },
-    {
+    "Caterium Ingot": {
+        "recipe": "Caterium Ingot",
+        "ingredients": [
+            {
+                "item": "Caterium Ore",
+                "amountPerMinute": 45
+            }
+        ],
+        "building": "Smelter",
+        "products": [
+            {
+                "item": "Caterium Ingot",
+                "amountPerMinute": 15
+            }
+        ],
+        "isAlternate": false
+    },
+    "Pure Caterium Ingot": {
+        "recipe": "Pure Caterium Ingot",
+        "ingredients": [
+            {
+                "item": "Caterium Ore",
+                "amountPerMinute": 24
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 24
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Caterium Ingot",
+                "amountPerMinute": 12
+            }
+        ],
+        "isAlternate": true
+    },
+    "Circuit Board": {
         "recipe": "Circuit Board",
         "ingredients": [
             {
@@ -488,7 +742,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Electrode Circuit Board": {
         "recipe": "Electrode Circuit Board",
         "ingredients": [
             {
@@ -509,7 +763,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Silicon Circuit Board": {
         "recipe": "Silicon Circuit Board",
         "ingredients": [
             {
@@ -530,7 +784,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Caterium Circuit Board": {
         "recipe": "Caterium Circuit Board",
         "ingredients": [
             {
@@ -551,7 +805,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Color Cartridge": {
         "recipe": "Color Cartridge",
         "ingredients": [
             {
@@ -568,7 +822,28 @@
         ],
         "isAlternate": false
     },
-    {
+    "Compacted Coal": {
+        "recipe": "Compacted Coal",
+        "ingredients": [
+            {
+                "item": "Coal",
+                "amountPerMinute": 25
+            },
+            {
+                "item": "Sulfur",
+                "amountPerMinute": 25
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Compacted Coal",
+                "amountPerMinute": 25
+            }
+        ],
+        "isAlternate": false
+    },
+    "Computer": {
         "recipe": "Computer",
         "ingredients": [
             {
@@ -597,7 +872,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Crystal Computer": {
         "recipe": "Crystal Computer",
         "ingredients": [
             {
@@ -618,7 +893,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Caterium Computer": {
         "recipe": "Caterium Computer",
         "ingredients": [
             {
@@ -643,7 +918,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Concrete": {
         "recipe": "Concrete",
         "ingredients": [
             {
@@ -660,7 +935,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Rubber Concrete": {
         "recipe": "Rubber Concrete",
         "ingredients": [
             {
@@ -681,7 +956,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Wet Concrete": {
         "recipe": "Wet Concrete",
         "ingredients": [
             {
@@ -702,7 +977,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Fine Concrete": {
         "recipe": "Fine Concrete",
         "ingredients": [
             {
@@ -723,7 +998,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Cooling System": {
         "recipe": "Cooling System",
         "ingredients": [
             {
@@ -752,7 +1027,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Cooling Device": {
         "recipe": "Cooling Device",
         "ingredients": [
             {
@@ -777,7 +1052,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Copper Ingot": {
         "recipe": "Copper Ingot",
         "ingredients": [
             {
@@ -794,7 +1069,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Copper Alloy Ingot": {
         "recipe": "Copper Alloy Ingot",
         "ingredients": [
             {
@@ -815,7 +1090,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Pure Copper Ingot": {
         "recipe": "Pure Copper Ingot",
         "ingredients": [
             {
@@ -836,7 +1111,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Copper Powder": {
         "recipe": "Copper Powder",
         "ingredients": [
             {
@@ -853,7 +1128,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Copper Sheet": {
         "recipe": "Copper Sheet",
         "ingredients": [
             {
@@ -870,7 +1145,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Steamed Copper Sheet": {
         "recipe": "Steamed Copper Sheet",
         "ingredients": [
             {
@@ -891,7 +1166,57 @@
         ],
         "isAlternate": true
     },
-    {
+    "Crystal Oscillator": {
+        "recipe": "Crystal Oscillator",
+        "ingredients": [
+            {
+                "item": "Quartz Crystal",
+                "amountPerMinute": 18
+            },
+            {
+                "item": "Cable",
+                "amountPerMinute": 14
+            },
+            {
+                "item": "Reinforced Iron Plate",
+                "amountPerMinute": 2.5
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "Crystal Oscillator",
+                "amountPerMinute": 1
+            }
+        ],
+        "isAlternate": false
+    },
+    "Insulated Crystal Oscillator": {
+        "recipe": "Insulated Crystal Oscillator",
+        "ingredients": [
+            {
+                "item": "Quartz Crystal",
+                "amountPerMinute": 18.75
+            },
+            {
+                "item": "Rubber",
+                "amountPerMinute": 13.125
+            },
+            {
+                "item": "AI Limiter",
+                "amountPerMinute": 1.875
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "Crystal Oscillator",
+                "amountPerMinute": 1.875
+            }
+        ],
+        "isAlternate": true
+    },
+    "Electromagnetic Control Rod": {
         "recipe": "Electromagnetic Control Rod",
         "ingredients": [
             {
@@ -912,7 +1237,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Electromagnetic Connection Rod": {
         "recipe": "Electromagnetic Connection Rod",
         "ingredients": [
             {
@@ -933,7 +1258,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Empty Canister": {
         "recipe": "Empty Canister",
         "ingredients": [
             {
@@ -950,7 +1275,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Steel Canister": {
         "recipe": "Steel Canister",
         "ingredients": [
             {
@@ -967,7 +1292,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Coated Iron Canister": {
         "recipe": "Coated Iron Canister",
         "ingredients": [
             {
@@ -988,7 +1313,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Unpackage Alumina Solution": {
         "recipe": "Unpackage Alumina Solution",
         "ingredients": [
             {
@@ -1009,7 +1334,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Oil": {
         "recipe": "Unpackage Oil",
         "ingredients": [
             {
@@ -1030,7 +1355,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Fuel": {
         "recipe": "Unpackage Fuel",
         "ingredients": [
             {
@@ -1051,7 +1376,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Heavy Oil Residue": {
         "recipe": "Unpackage Heavy Oil Residue",
         "ingredients": [
             {
@@ -1072,7 +1397,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Liquid Biofuel": {
         "recipe": "Unpackage Liquid Biofuel",
         "ingredients": [
             {
@@ -1093,7 +1418,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Sulfuric Acid": {
         "recipe": "Unpackage Sulfuric Acid",
         "ingredients": [
             {
@@ -1114,7 +1439,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Turbofuel": {
         "recipe": "Unpackage Turbofuel",
         "ingredients": [
             {
@@ -1135,7 +1460,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Water": {
         "recipe": "Unpackage Water",
         "ingredients": [
             {
@@ -1156,7 +1481,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Empty Fluid Tank": {
         "recipe": "Empty Fluid Tank",
         "ingredients": [
             {
@@ -1173,7 +1498,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Nitric Acid": {
         "recipe": "Unpackage Nitric Acid",
         "ingredients": [
             {
@@ -1194,7 +1519,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Unpackage Nitrogen Gas": {
         "recipe": "Unpackage Nitrogen Gas",
         "ingredients": [
             {
@@ -1215,7 +1540,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Encased Industrial Beam": {
         "recipe": "Encased Industrial Beam",
         "ingredients": [
             {
@@ -1236,7 +1561,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Encased Industrial Pipe": {
         "recipe": "Encased Industrial Pipe",
         "ingredients": [
             {
@@ -1257,7 +1582,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Encased Plutonium Cell": {
         "recipe": "Encased Plutonium Cell",
         "ingredients": [
             {
@@ -1278,7 +1603,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Instant Plutonium Cell": {
         "recipe": "Instant Plutonium Cell",
         "ingredients": [
             {
@@ -1299,7 +1624,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Encased Uranium Cell": {
         "recipe": "Encased Uranium Cell",
         "ingredients": [
             {
@@ -1328,7 +1653,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Infused Uranium Cell": {
         "recipe": "Infused Uranium Cell",
         "ingredients": [
             {
@@ -1357,24 +1682,103 @@
         ],
         "isAlternate": true
     },
-    {
-        "recipe": "Color Cartridge",
+    "Fabric": {
+        "recipe": "Fabric",
         "ingredients": [
             {
-                "item": "Flower Petals",
-                "amountPerMinute": 50
+                "item": "Mycelia",
+                "amountPerMinute": 15
+            },
+            {
+                "item": "Biomass",
+                "amountPerMinute": 75
             }
         ],
-        "building": "Constructor",
+        "building": "Assembler",
         "products": [
             {
-                "item": "Color Cartridge",
-                "amountPerMinute": 100
+                "item": "Fabric",
+                "amountPerMinute": 15
             }
         ],
         "isAlternate": false
     },
-    {
+    "Polyester Fabric": {
+        "recipe": "Polyester Fabric",
+        "ingredients": [
+            {
+                "item": "Polymer Resin",
+                "amountPerMinute": 30
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 30
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Fabric",
+                "amountPerMinute": 30
+            }
+        ],
+        "isAlternate": false
+    },
+    "Fused Modular Frame": {
+        "recipe": "Fused Modular Frame",
+        "ingredients": [
+            {
+                "item": "Heavy Modular Frame",
+                "amountPerMinute": 1.5
+            },
+            {
+                "item": "Aluminum Casing",
+                "amountPerMinute": 75
+            },
+            {
+                "item": "Nitrogen Gas",
+                "amountPerMinute": 37.5
+            }
+        ],
+        "building": "Blender",
+        "products": [
+            {
+                "item": "Fused Modular Frame",
+                "amountPerMinute": 1.5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Heat-Fused Frame": {
+        "recipe": "Heat-Fused Frame",
+        "ingredients": [
+            {
+                "item": "Heavy Modular Frame",
+                "amountPerMinute": 3
+            },
+            {
+                "item": "Aluminum Ingot",
+                "amountPerMinute": 150
+            },
+            {
+                "item": "Nitric Acid",
+                "amountPerMinute": 24
+            },
+            {
+                "item": "Fuel",
+                "amountPerMinute": 30
+            }
+        ],
+        "building": "Blender",
+        "products": [
+            {
+                "item": "Fused Modular Frame",
+                "amountPerMinute": 3
+            }
+        ],
+        "isAlternate": true
+    },
+    "Heat Sink": {
         "recipe": "Heat Sink",
         "ingredients": [
             {
@@ -1395,7 +1799,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Heat Exchanger": {
         "recipe": "Heat Exchanger",
         "ingredients": [
             {
@@ -1416,7 +1820,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Heavy Modular Frame": {
         "recipe": "Heavy Modular Frame",
         "ingredients": [
             {
@@ -1445,7 +1849,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Heavy Flexible Frame": {
         "recipe": "Heavy Flexible Frame",
         "ingredients": [
             {
@@ -1474,7 +1878,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Heavy Encased Frame": {
         "recipe": "Heavy Encased Frame",
         "ingredients": [
             {
@@ -1503,7 +1907,57 @@
         ],
         "isAlternate": true
     },
-    {
+    "High-Speed Connector": {
+        "recipe": "High-Speed Connector",
+        "ingredients": [
+            {
+                "item": "Quickwire",
+                "amountPerMinute": 210
+            },
+            {
+                "item": "Cable",
+                "amountPerMinute": 37.5
+            },
+            {
+                "item": "Circuit Board",
+                "amountPerMinute": 3.75
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "High-Speed Connector",
+                "amountPerMinute": 3.75
+            }
+        ],
+        "isAlternate": false
+    },
+    "Silicon High-Speed Connector": {
+        "recipe": "Silicon High-Speed Connector",
+        "ingredients": [
+            {
+                "item": "Quickwire",
+                "amountPerMinute": 90
+            },
+            {
+                "item": "Silica",
+                "amountPerMinute": 37.5
+            },
+            {
+                "item": "Circuit Board",
+                "amountPerMinute": 3
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "High-Speed Connector",
+                "amountPerMinute": 3
+            }
+        ],
+        "isAlternate": true
+    },
+    "The HUB": {
         "recipe": "The HUB",
         "ingredients": [
             {
@@ -1520,7 +1974,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Iron Ingot": {
         "recipe": "Iron Ingot",
         "ingredients": [
             {
@@ -1537,7 +1991,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Pure Iron Ingot": {
         "recipe": "Pure Iron Ingot",
         "ingredients": [
             {
@@ -1558,7 +2012,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Iron Alloy Ingot": {
         "recipe": "Iron Alloy Ingot",
         "ingredients": [
             {
@@ -1579,7 +2033,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Iron Plate": {
         "recipe": "Iron Plate",
         "ingredients": [
             {
@@ -1596,7 +2050,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Coated Iron Plate": {
         "recipe": "Coated Iron Plate",
         "ingredients": [
             {
@@ -1617,7 +2071,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Steel Coated Plate": {
         "recipe": "Steel Coated Plate",
         "ingredients": [
             {
@@ -1638,7 +2092,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Iron Rod": {
         "recipe": "Iron Rod",
         "ingredients": [
             {
@@ -1655,7 +2109,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Steel Rod": {
         "recipe": "Steel Rod",
         "ingredients": [
             {
@@ -1672,24 +2126,7 @@
         ],
         "isAlternate": true
     },
-    {
-        "recipe": "Biomass (Leaves)",
-        "ingredients": [
-            {
-                "item": "Leaves",
-                "amountPerMinute": 120
-            }
-        ],
-        "building": "Constructor",
-        "products": [
-            {
-                "item": "Biomass",
-                "amountPerMinute": 60
-            }
-        ],
-        "isAlternate": false
-    },
-    {
+    "Magnetic Field Generator": {
         "recipe": "Magnetic Field Generator",
         "ingredients": [
             {
@@ -1714,7 +2151,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Modular Engine": {
         "recipe": "Modular Engine",
         "ingredients": [
             {
@@ -1739,7 +2176,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Modular Frame": {
         "recipe": "Modular Frame",
         "ingredients": [
             {
@@ -1760,7 +2197,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Bolted Frame": {
         "recipe": "Bolted Frame",
         "ingredients": [
             {
@@ -1781,7 +2218,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Steeled Frame": {
         "recipe": "Steeled Frame",
         "ingredients": [
             {
@@ -1802,7 +2239,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Motor": {
         "recipe": "Motor",
         "ingredients": [
             {
@@ -1823,7 +2260,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Rigour Motor": {
         "recipe": "Rigour Motor",
         "ingredients": [
             {
@@ -1848,7 +2285,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Electric Motor": {
         "recipe": "Electric Motor",
         "ingredients": [
             {
@@ -1869,7 +2306,120 @@
         ],
         "isAlternate": true
     },
-    {
+    "Cluster Nobelisk": {
+        "recipe": "Cluster Nobelisk",
+        "ingredients": [
+            {
+                "item": "Nobelisk",
+                "amountPerMinute": 7.5
+            },
+            {
+                "item": "Smokeless Powder",
+                "amountPerMinute": 10
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Cluster Nobelisk",
+                "amountPerMinute": 2.5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Gas Nobelisk": {
+        "recipe": "Gas Nobelisk",
+        "ingredients": [
+            {
+                "item": "Nobelisk",
+                "amountPerMinute": 5
+            },
+            {
+                "item": "Biomass",
+                "amountPerMinute": 50
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Gas Nobelisk",
+                "amountPerMinute": 5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Nobelisk": {
+        "recipe": "Nobelisk",
+        "ingredients": [
+            {
+                "item": "Steel Pipe",
+                "amountPerMinute": 20
+            },
+            {
+                "item": "Black Powder",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Nobelisk",
+                "amountPerMinute": 10
+            }
+        ],
+        "isAlternate": false
+    },
+    "Nuke Nobelisk": {
+        "recipe": "Nuke Nobelisk",
+        "ingredients": [
+            {
+                "item": "Nobelisk",
+                "amountPerMinute": 2.5
+            },
+            {
+                "item": "Encased Uranium Cell",
+                "amountPerMinute": 10
+            },
+            {
+                "item": "Smokeless Powder",
+                "amountPerMinute": 5
+            },
+            {
+                "item": "AI Limiter",
+                "amountPerMinute": 3
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "Nuke Nobelisk",
+                "amountPerMinute": 0.5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Pulse Nobelisk": {
+        "recipe": "Pulse Nobelisk",
+        "ingredients": [
+            {
+                "item": "Nobelisk",
+                "amountPerMinute": 5
+            },
+            {
+                "item": "Crystal Oscillator",
+                "amountPerMinute": 1
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Pulse Nobelisk",
+                "amountPerMinute": 5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Non-fissile Uranium": {
         "recipe": "Non-fissile Uranium",
         "ingredients": [
             {
@@ -1902,7 +2452,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Fertile Uranium": {
         "recipe": "Fertile Uranium",
         "ingredients": [
             {
@@ -1935,7 +2485,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Nuclear Pasta": {
         "recipe": "Nuclear Pasta",
         "ingredients": [
             {
@@ -1956,7 +2506,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Alumina Solution": {
         "recipe": "Packaged Alumina Solution",
         "ingredients": [
             {
@@ -1977,7 +2527,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Fuel": {
         "recipe": "Packaged Fuel",
         "ingredients": [
             {
@@ -1998,7 +2548,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Diluted Packaged Fuel": {
         "recipe": "Diluted Packaged Fuel",
         "ingredients": [
             {
@@ -2019,7 +2569,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Packaged Heavy Oil Residue": {
         "recipe": "Packaged Heavy Oil Residue",
         "ingredients": [
             {
@@ -2040,7 +2590,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Liquid Biofuel": {
         "recipe": "Packaged Liquid Biofuel",
         "ingredients": [
             {
@@ -2061,7 +2611,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Nitric Acid": {
         "recipe": "Packaged Nitric Acid",
         "ingredients": [
             {
@@ -2082,7 +2632,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Nitrogen Gas": {
         "recipe": "Packaged Nitrogen Gas",
         "ingredients": [
             {
@@ -2103,7 +2653,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Oil": {
         "recipe": "Packaged Oil",
         "ingredients": [
             {
@@ -2124,7 +2674,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Sulfuric Acid": {
         "recipe": "Packaged Sulfuric Acid",
         "ingredients": [
             {
@@ -2145,7 +2695,28 @@
         ],
         "isAlternate": false
     },
-    {
+    "Packaged Turbofuel": {
+        "recipe": "Packaged Turbofuel",
+        "ingredients": [
+            {
+                "item": "Turbofuel",
+                "amountPerMinute": 20
+            },
+            {
+                "item": "Empty Canister",
+                "amountPerMinute": 20
+            }
+        ],
+        "building": "Packager",
+        "products": [
+            {
+                "item": "Packaged Turbofuel",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    "Packaged Water": {
         "recipe": "Packaged Water",
         "ingredients": [
             {
@@ -2166,7 +2737,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Petroleum Coke": {
         "recipe": "Petroleum Coke",
         "ingredients": [
             {
@@ -2183,7 +2754,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Plastic": {
         "recipe": "Plastic",
         "ingredients": [
             {
@@ -2204,7 +2775,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Residual Plastic": {
         "recipe": "Residual Plastic",
         "ingredients": [
             {
@@ -2225,7 +2796,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Recycled Plastic": {
         "recipe": "Recycled Plastic",
         "ingredients": [
             {
@@ -2246,7 +2817,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Plutonium Fuel Rod": {
         "recipe": "Plutonium Fuel Rod",
         "ingredients": [
             {
@@ -2275,7 +2846,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Plutonium Fuel Unit": {
         "recipe": "Plutonium Fuel Unit",
         "ingredients": [
             {
@@ -2296,7 +2867,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Plutonium Pellet": {
         "recipe": "Plutonium Pellet",
         "ingredients": [
             {
@@ -2317,7 +2888,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Plutonium Waste": {
         "recipe": "Plutonium Waste",
         "ingredients": [
             {
@@ -2338,7 +2909,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Fuel": {
         "recipe": "Fuel",
         "ingredients": [
             {
@@ -2359,7 +2930,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Heavy Oil Residue": {
         "recipe": "Heavy Oil Residue",
         "ingredients": [
             {
@@ -2380,7 +2951,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Polymer Resin": {
         "recipe": "Polymer Resin",
         "ingredients": [
             {
@@ -2401,7 +2972,58 @@
         ],
         "isAlternate": true
     },
-    {
+    "Power Shard (1)": {
+        "recipe": "Power Shard (1)",
+        "ingredients": [
+            {
+                "item": "Blue Power Slug",
+                "amountPerMinute": 7.5
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Power Shard",
+                "amountPerMinute": 7.5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Power Shard (2)": {
+        "recipe": "Power Shard (2)",
+        "ingredients": [
+            {
+                "item": "Yellow Power Slug",
+                "amountPerMinute": 5
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Power Shard",
+                "amountPerMinute": 10
+            }
+        ],
+        "isAlternate": false
+    },
+    "Power Shard (5)": {
+        "recipe": "Power Shard (5)",
+        "ingredients": [
+            {
+                "item": "Purple Power Slug",
+                "amountPerMinute": 2.5
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Power Shard",
+                "amountPerMinute": 12.5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Pressure Conversion Cube": {
         "recipe": "Pressure Conversion Cube",
         "ingredients": [
             {
@@ -2422,7 +3044,83 @@
         ],
         "isAlternate": false
     },
-    {
+    "Quartz Crystal": {
+        "recipe": "Quartz Crystal",
+        "ingredients": [
+            {
+                "item": "Raw Quartz",
+                "amountPerMinute": 37.5
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Quartz Crystal",
+                "amountPerMinute": 22.5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Pure Quartz Crystal": {
+        "recipe": "Pure Quartz Crystal",
+        "ingredients": [
+            {
+                "item": "Raw Quartz",
+                "amountPerMinute": 67.5
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 37.5
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Quartz Crystal",
+                "amountPerMinute": 52.5
+            }
+        ],
+        "isAlternate": true
+    },
+    "Quickwire": {
+        "recipe": "Quickwire",
+        "ingredients": [
+            {
+                "item": "Caterium Ingot",
+                "amountPerMinute": 12
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Quickwire",
+                "amountPerMinute": 60
+            }
+        ],
+        "isAlternate": false
+    },
+    "Fused Quickwire": {
+        "recipe": "Fused Quickwire",
+        "ingredients": [
+            {
+                "item": "Caterium Ingot",
+                "amountPerMinute": 7.5
+            },
+            {
+                "item": "Copper Ingot",
+                "amountPerMinute": 37.5
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Quickwire",
+                "amountPerMinute": 90
+            }
+        ],
+        "isAlternate": true
+    },
+    "Radio Control Unit": {
         "recipe": "Radio Control Unit",
         "ingredients": [
             {
@@ -2447,7 +3145,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Radio Control System": {
         "recipe": "Radio Control System",
         "ingredients": [
             {
@@ -2476,7 +3174,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Radio Connection Unit": {
         "recipe": "Radio Connection Unit",
         "ingredients": [
             {
@@ -2501,7 +3199,91 @@
         ],
         "isAlternate": true
     },
-    {
+    "Explosive Rebar": {
+        "recipe": "Explosive Rebar",
+        "ingredients": [
+            {
+                "item": "Iron Rebar",
+                "amountPerMinute": 10
+            },
+            {
+                "item": "Smokeless Powder",
+                "amountPerMinute": 10
+            },
+            {
+                "item": "Steel Pipe",
+                "amountPerMinute": 10
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "Explosive Rebar",
+                "amountPerMinute": 5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Iron Rebar": {
+        "recipe": "Iron Rebar",
+        "ingredients": [
+            {
+                "item": "Iron Rod",
+                "amountPerMinute": 15
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Iron Rebar",
+                "amountPerMinute": 15
+            }
+        ],
+        "isAlternate": false
+    },
+    "Shatter Rebar": {
+        "recipe": "Shatter Rebar",
+        "ingredients": [
+            {
+                "item": "Iron Rebar",
+                "amountPerMinute": 10
+            },
+            {
+                "item": "Quartz Crystal",
+                "amountPerMinute": 15
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Shatter Rebar",
+                "amountPerMinute": 5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Stun Rebar": {
+        "recipe": "Stun Rebar",
+        "ingredients": [
+            {
+                "item": "Iron Rebar",
+                "amountPerMinute": 10
+            },
+            {
+                "item": "Quickwire",
+                "amountPerMinute": 50
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Stun Rebar",
+                "amountPerMinute": 10
+            }
+        ],
+        "isAlternate": false
+    },
+    "Reinforced Iron Plate": {
         "recipe": "Reinforced Iron Plate",
         "ingredients": [
             {
@@ -2522,7 +3304,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Adhered Iron Plate": {
         "recipe": "Adhered Iron Plate",
         "ingredients": [
             {
@@ -2543,7 +3325,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Bolted Iron Plate": {
         "recipe": "Bolted Iron Plate",
         "ingredients": [
             {
@@ -2564,7 +3346,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Stitched Iron Plate": {
         "recipe": "Stitched Iron Plate",
         "ingredients": [
             {
@@ -2585,7 +3367,74 @@
         ],
         "isAlternate": true
     },
-    {
+    "Homing Rifle Ammo": {
+        "recipe": "Homing Rifle Ammo",
+        "ingredients": [
+            {
+                "item": "Rifle Ammo",
+                "amountPerMinute": 50
+            },
+            {
+                "item": "High-Speed Connector",
+                "amountPerMinute": 2.5
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Homing Rifle Ammo",
+                "amountPerMinute": 25
+            }
+        ],
+        "isAlternate": false
+    },
+    "Rifle Ammo": {
+        "recipe": "Rifle Ammo",
+        "ingredients": [
+            {
+                "item": "Copper Sheet",
+                "amountPerMinute": 15
+            },
+            {
+                "item": "Smokeless Powder",
+                "amountPerMinute": 10
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Rifle Ammo",
+                "amountPerMinute": 75
+            }
+        ],
+        "isAlternate": false
+    },
+    "Turbo Rifle Ammo": {
+        "recipe": "Turbo Rifle Ammo",
+        "ingredients": [
+            {
+                "item": "Rifle Ammo",
+                "amountPerMinute": 125
+            },
+            {
+                "item": "Aluminum Casing",
+                "amountPerMinute": 15
+            },
+            {
+                "item": "Turbofuel",
+                "amountPerMinute": 15
+            }
+        ],
+        "building": "Blender",
+        "products": [
+            {
+                "item": "Turbo Rifle Ammo",
+                "amountPerMinute": 250
+            }
+        ],
+        "isAlternate": false
+    },
+    "Rotor": {
         "recipe": "Rotor",
         "ingredients": [
             {
@@ -2606,7 +3455,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Copper Rotor": {
         "recipe": "Copper Rotor",
         "ingredients": [
             {
@@ -2627,7 +3476,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Steel Rotor": {
         "recipe": "Steel Rotor",
         "ingredients": [
             {
@@ -2648,7 +3497,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Rubber": {
         "recipe": "Rubber",
         "ingredients": [
             {
@@ -2669,7 +3518,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Residual Rubber": {
         "recipe": "Residual Rubber",
         "ingredients": [
             {
@@ -2690,7 +3539,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Recycled Rubber": {
         "recipe": "Recycled Rubber",
         "ingredients": [
             {
@@ -2711,7 +3560,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Screw": {
         "recipe": "Screw",
         "ingredients": [
             {
@@ -2728,7 +3577,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Cast Screw": {
         "recipe": "Cast Screw",
         "ingredients": [
             {
@@ -2745,7 +3594,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Steel Screw": {
         "recipe": "Steel Screw",
         "ingredients": [
             {
@@ -2762,7 +3611,70 @@
         ],
         "isAlternate": true
     },
-    {
+    "Alumina Solution": {
+        "recipe": "Alumina Solution",
+        "ingredients": [
+            {
+                "item": "Bauxite",
+                "amountPerMinute": 120
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 180
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Alumina Solution",
+                "amountPerMinute": 120
+            },
+            {
+                "item": "Silica",
+                "amountPerMinute": 50
+            }
+        ],
+        "isAlternate": false
+    },
+    "Silica": {
+        "recipe": "Silica",
+        "ingredients": [
+            {
+                "item": "Raw Quartz",
+                "amountPerMinute": 22.5
+            }
+        ],
+        "building": "Constructor",
+        "products": [
+            {
+                "item": "Silica",
+                "amountPerMinute": 37.5
+            }
+        ],
+        "isAlternate": false
+    },
+    "Cheap Silica": {
+        "recipe": "Cheap Silica",
+        "ingredients": [
+            {
+                "item": "Raw Quartz",
+                "amountPerMinute": 11.25
+            },
+            {
+                "item": "Limestone",
+                "amountPerMinute": 18.75
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Silica",
+                "amountPerMinute": 26.25
+            }
+        ],
+        "isAlternate": true
+    },
+    "Smart Plating": {
         "recipe": "Smart Plating",
         "ingredients": [
             {
@@ -2783,7 +3695,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Plastic Smart Plating": {
         "recipe": "Plastic Smart Plating",
         "ingredients": [
             {
@@ -2808,7 +3720,28 @@
         ],
         "isAlternate": true
     },
-    {
+    "Smokeless Powder": {
+        "recipe": "Smokeless Powder",
+        "ingredients": [
+            {
+                "item": "Black Powder",
+                "amountPerMinute": 20
+            },
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 10
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Smokeless Powder",
+                "amountPerMinute": 20
+            }
+        ],
+        "isAlternate": false
+    },
+    "Solid Biofuel": {
         "recipe": "Solid Biofuel",
         "ingredients": [
             {
@@ -2825,7 +3758,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Stator": {
         "recipe": "Stator",
         "ingredients": [
             {
@@ -2846,7 +3779,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Quickwire Stator": {
         "recipe": "Quickwire Stator",
         "ingredients": [
             {
@@ -2867,7 +3800,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Steel Beam": {
         "recipe": "Steel Beam",
         "ingredients": [
             {
@@ -2884,7 +3817,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Steel Ingot": {
         "recipe": "Steel Ingot",
         "ingredients": [
             {
@@ -2905,7 +3838,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Coke Steel Ingot": {
         "recipe": "Coke Steel Ingot",
         "ingredients": [
             {
@@ -2926,7 +3859,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Compacted Steel Ingot": {
         "recipe": "Compacted Steel Ingot",
         "ingredients": [
             {
@@ -2947,7 +3880,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Solid Steel Ingot": {
         "recipe": "Solid Steel Ingot",
         "ingredients": [
             {
@@ -2968,7 +3901,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Steel Pipe": {
         "recipe": "Steel Pipe",
         "ingredients": [
             {
@@ -2985,7 +3918,86 @@
         ],
         "isAlternate": false
     },
-    {
+    "Supercomputer": {
+        "recipe": "Supercomputer",
+        "ingredients": [
+            {
+                "item": "Computer",
+                "amountPerMinute": 3.75
+            },
+            {
+                "item": "AI Limiter",
+                "amountPerMinute": 3.75
+            },
+            {
+                "item": "High-Speed Connector",
+                "amountPerMinute": 5.625
+            },
+            {
+                "item": "Plastic",
+                "amountPerMinute": 52.5
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "Supercomputer",
+                "amountPerMinute": 1.875
+            }
+        ],
+        "isAlternate": false
+    },
+    "OC Supercomputer": {
+        "recipe": "OC Supercomputer",
+        "ingredients": [
+            {
+                "item": "Radio Control Unit",
+                "amountPerMinute": 9
+            },
+            {
+                "item": "Cooling System",
+                "amountPerMinute": 9
+            }
+        ],
+        "building": "Assembler",
+        "products": [
+            {
+                "item": "Supercomputer",
+                "amountPerMinute": 3
+            }
+        ],
+        "isAlternate": true
+    },
+    "Super-State Computer": {
+        "recipe": "Super-State Computer",
+        "ingredients": [
+            {
+                "item": "Computer",
+                "amountPerMinute": 3.6
+            },
+            {
+                "item": "Electromagnetic Control Rod",
+                "amountPerMinute": 2.4
+            },
+            {
+                "item": "Battery",
+                "amountPerMinute": 24
+            },
+            {
+                "item": "Wire",
+                "amountPerMinute": 54
+            }
+        ],
+        "building": "Manufacturer",
+        "products": [
+            {
+                "item": "Supercomputer",
+                "amountPerMinute": 2.4
+            }
+        ],
+        "isAlternate": true
+    },
+    "Thermal Propulsion Rocket": {
         "recipe": "Thermal Propulsion Rocket",
         "ingredients": [
             {
@@ -3014,7 +4026,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Turbo Motor": {
         "recipe": "Turbo Motor",
         "ingredients": [
             {
@@ -3043,7 +4055,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Turbo Electric Motor": {
         "recipe": "Turbo Electric Motor",
         "ingredients": [
             {
@@ -3072,7 +4084,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Turbo Pressure Motor": {
         "recipe": "Turbo Pressure Motor",
         "ingredients": [
             {
@@ -3101,7 +4113,78 @@
         ],
         "isAlternate": true
     },
-    {
+    "Turbofuel": {
+        "recipe": "Turbofuel",
+        "ingredients": [
+            {
+                "item": "Fuel",
+                "amountPerMinute": 22.5
+            },
+            {
+                "item": "Compacted Coal",
+                "amountPerMinute": 15
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Turbofuel",
+                "amountPerMinute": 18.75
+            }
+        ],
+        "isAlternate": false
+    },
+    "Turbo Heavy Fuel": {
+        "recipe": "Turbo Heavy Fuel",
+        "ingredients": [
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 37.5
+            },
+            {
+                "item": "Compacted Coal",
+                "amountPerMinute": 30
+            }
+        ],
+        "building": "Refinery",
+        "products": [
+            {
+                "item": "Turbofuel",
+                "amountPerMinute": 30
+            }
+        ],
+        "isAlternate": true
+    },
+    "Turbo Blend Fuel": {
+        "recipe": "Turbo Blend Fuel",
+        "ingredients": [
+            {
+                "item": "Fuel",
+                "amountPerMinute": 15
+            },
+            {
+                "item": "Heavy Oil Residue",
+                "amountPerMinute": 30
+            },
+            {
+                "item": "Sulfur",
+                "amountPerMinute": 22.5
+            },
+            {
+                "item": "Petroleum Coke",
+                "amountPerMinute": 22.5
+            }
+        ],
+        "building": "Blender",
+        "products": [
+            {
+                "item": "Turbofuel",
+                "amountPerMinute": 45
+            }
+        ],
+        "isAlternate": true
+    },
+    "Uranium Fuel Rod": {
         "recipe": "Uranium Fuel Rod",
         "ingredients": [
             {
@@ -3126,7 +4209,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Uranium Fuel Unit": {
         "recipe": "Uranium Fuel Unit",
         "ingredients": [
             {
@@ -3155,7 +4238,28 @@
         ],
         "isAlternate": true
     },
-    {
+    "Uranium Waste": {
+        "recipe": "Uranium Waste",
+        "ingredients": [
+            {
+                "item": "Uranium Fuel Rod",
+                "amountPerMinute": 0.2
+            },
+            {
+                "item": "Water",
+                "amountPerMinute": 240
+            }
+        ],
+        "building": "Nuclear Power Plant",
+        "products": [
+            {
+                "item": "Uranium Waste",
+                "amountPerMinute": 10
+            }
+        ],
+        "isAlternate": false
+    },
+    "Versatile Framework": {
         "recipe": "Versatile Framework",
         "ingredients": [
             {
@@ -3176,7 +4280,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Flexible Framework": {
         "recipe": "Flexible Framework",
         "ingredients": [
             {
@@ -3201,7 +4305,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Wire": {
         "recipe": "Wire",
         "ingredients": [
             {
@@ -3218,7 +4322,7 @@
         ],
         "isAlternate": false
     },
-    {
+    "Fused Wire": {
         "recipe": "Fused Wire",
         "ingredients": [
             {
@@ -3239,7 +4343,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Iron Wire": {
         "recipe": "Iron Wire",
         "ingredients": [
             {
@@ -3256,7 +4360,7 @@
         ],
         "isAlternate": true
     },
-    {
+    "Caterium Wire": {
         "recipe": "Caterium Wire",
         "ingredients": [
             {
@@ -3273,24 +4377,7 @@
         ],
         "isAlternate": true
     },
-    {
-        "recipe": "Biomass (Wood)",
-        "ingredients": [
-            {
-                "item": "Wood",
-                "amountPerMinute": 60
-            }
-        ],
-        "building": "Constructor",
-        "products": [
-            {
-                "item": "Biomass",
-                "amountPerMinute": 300
-            }
-        ],
-        "isAlternate": false
-    },
-    {
+    "Charcoal": {
         "recipe": "Charcoal",
         "ingredients": [
             {
@@ -3307,36 +4394,7 @@
         ],
         "isAlternate": true
     },
-    {
-        "recipe": "Encased Uranium Cell",
-        "ingredients": [
-            {
-                "item": "Uranium",
-                "amountPerMinute": 50
-            },
-            {
-                "item": "Concrete",
-                "amountPerMinute": 15
-            },
-            {
-                "item": "Sulfuric Acid",
-                "amountPerMinute": 40
-            }
-        ],
-        "building": "Blender",
-        "products": [
-            {
-                "item": "Encased Uranium Cell",
-                "amountPerMinute": 25
-            },
-            {
-                "item": "Sulfuric Acid",
-                "amountPerMinute": 10
-            }
-        ],
-        "isAlternate": false
-    },
-    {
+    "Sulfuric Acid": {
         "recipe": "Sulfuric Acid",
         "ingredients": [
             {
@@ -3357,74 +4415,7 @@
         ],
         "isAlternate": false
     },
-    {
-        "recipe": "Unpackage Sulfuric Acid",
-        "ingredients": [
-            {
-                "item": "Packaged Sulfuric Acid",
-                "amountPerMinute": 60
-            }
-        ],
-        "building": "Packager",
-        "products": [
-            {
-                "item": "Sulfuric Acid",
-                "amountPerMinute": 60
-            },
-            {
-                "item": "Empty Canister",
-                "amountPerMinute": 60
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Alumina Solution",
-        "ingredients": [
-            {
-                "item": "Bauxite",
-                "amountPerMinute": 120
-            },
-            {
-                "item": "Water",
-                "amountPerMinute": 180
-            }
-        ],
-        "building": "Refinery",
-        "products": [
-            {
-                "item": "Alumina Solution",
-                "amountPerMinute": 120
-            },
-            {
-                "item": "Silica",
-                "amountPerMinute": 50
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Unpackage Alumina Solution",
-        "ingredients": [
-            {
-                "item": "Packaged Alumina Solution",
-                "amountPerMinute": 120
-            }
-        ],
-        "building": "Packager",
-        "products": [
-            {
-                "item": "Alumina Solution",
-                "amountPerMinute": 120
-            },
-            {
-                "item": "Empty Canister",
-                "amountPerMinute": 120
-            }
-        ],
-        "isAlternate": false
-    },
-    {
+    "Sloppy Alumina": {
         "recipe": "Sloppy Alumina",
         "ingredients": [
             {
@@ -3445,28 +4436,7 @@
         ],
         "isAlternate": true
     },
-    {
-        "recipe": "Fuel",
-        "ingredients": [
-            {
-                "item": "Crude Oil",
-                "amountPerMinute": 60
-            }
-        ],
-        "building": "Refinery",
-        "products": [
-            {
-                "item": "Fuel",
-                "amountPerMinute": 40
-            },
-            {
-                "item": "Polymer Resin",
-                "amountPerMinute": 30
-            }
-        ],
-        "isAlternate": false
-    },
-    {
+    "Residual Fuel": {
         "recipe": "Residual Fuel",
         "ingredients": [
             {
@@ -3483,28 +4453,7 @@
         ],
         "isAlternate": false
     },
-    {
-        "recipe": "Unpackage Fuel",
-        "ingredients": [
-            {
-                "item": "Packaged Fuel",
-                "amountPerMinute": 60
-            }
-        ],
-        "building": "Packager",
-        "products": [
-            {
-                "item": "Fuel",
-                "amountPerMinute": 60
-            },
-            {
-                "item": "Empty Canister",
-                "amountPerMinute": 60
-            }
-        ],
-        "isAlternate": false
-    },
-    {
+    "Diluted Fuel": {
         "recipe": "Diluted Fuel",
         "ingredients": [
             {
@@ -3525,112 +4474,7 @@
         ],
         "isAlternate": true
     },
-    {
-        "recipe": "Unpackage Heavy Oil Residue",
-        "ingredients": [
-            {
-                "item": "Packaged Heavy Oil Residue",
-                "amountPerMinute": 20
-            }
-        ],
-        "building": "Packager",
-        "products": [
-            {
-                "item": "Heavy Oil Residue",
-                "amountPerMinute": 20
-            },
-            {
-                "item": "Empty Canister",
-                "amountPerMinute": 20
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Plastic",
-        "ingredients": [
-            {
-                "item": "Crude Oil",
-                "amountPerMinute": 30
-            }
-        ],
-        "building": "Refinery",
-        "products": [
-            {
-                "item": "Plastic",
-                "amountPerMinute": 20
-            },
-            {
-                "item": "Heavy Oil Residue",
-                "amountPerMinute": 10
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Rubber",
-        "ingredients": [
-            {
-                "item": "Crude Oil",
-                "amountPerMinute": 30
-            }
-        ],
-        "building": "Refinery",
-        "products": [
-            {
-                "item": "Rubber",
-                "amountPerMinute": 20
-            },
-            {
-                "item": "Heavy Oil Residue",
-                "amountPerMinute": 20
-            }
-        ],
-        "isAlternate": false
-    },
-    {
-        "recipe": "Heavy Oil Residue",
-        "ingredients": [
-            {
-                "item": "Crude Oil",
-                "amountPerMinute": 30
-            }
-        ],
-        "building": "Refinery",
-        "products": [
-            {
-                "item": "Heavy Oil Residue",
-                "amountPerMinute": 40
-            },
-            {
-                "item": "Polymer Resin",
-                "amountPerMinute": 20
-            }
-        ],
-        "isAlternate": true
-    },
-    {
-        "recipe": "Polymer Resin",
-        "ingredients": [
-            {
-                "item": "Crude Oil",
-                "amountPerMinute": 60
-            }
-        ],
-        "building": "Refinery",
-        "products": [
-            {
-                "item": "Polymer Resin",
-                "amountPerMinute": 130
-            },
-            {
-                "item": "Heavy Oil Residue",
-                "amountPerMinute": 20
-            }
-        ],
-        "isAlternate": true
-    },
-    {
+    "Liquid Biofuel": {
         "recipe": "Liquid Biofuel",
         "ingredients": [
             {
@@ -3651,28 +4495,7 @@
         ],
         "isAlternate": false
     },
-    {
-        "recipe": "Unpackage Liquid Biofuel",
-        "ingredients": [
-            {
-                "item": "Packaged Liquid Biofuel",
-                "amountPerMinute": 60
-            }
-        ],
-        "building": "Packager",
-        "products": [
-            {
-                "item": "Liquid Biofuel",
-                "amountPerMinute": 60
-            },
-            {
-                "item": "Empty Canister",
-                "amountPerMinute": 60
-            }
-        ],
-        "isAlternate": false
-    },
-    {
+    "Nitric Acid": {
         "recipe": "Nitric Acid",
         "ingredients": [
             {
@@ -3696,26 +4519,5 @@
             }
         ],
         "isAlternate": false
-    },
-    {
-        "recipe": "Unpackage Nitric Acid",
-        "ingredients": [
-            {
-                "item": "Packaged Nitric Acid",
-                "amountPerMinute": 20
-            }
-        ],
-        "building": "Packager",
-        "products": [
-            {
-                "item": "Nitric Acid",
-                "amountPerMinute": 20
-            },
-            {
-                "item": "Empty Fluid Tank",
-                "amountPerMinute": 20
-            }
-        ],
-        "isAlternate": false
     }
-]
+}
