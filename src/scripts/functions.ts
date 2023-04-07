@@ -6,9 +6,10 @@ import { RawRecipe, type RecipeItem, type RecipesMap, type Recipe, type ItemsCom
 import type { ProductionNode } from "./types";
 
 const ITEMS = Object.keys(_ITEM_PAGES);
-export const PrimaryRecipesArray: Recipe[] = reducePrimaryRecipes();
+export const ProductionRecipes: RawRecipe[] = filterNonProductionRecipes(Object.values(_RECIPES))
+export const PrimaryRecipesArray: RawRecipe[] = reducePrimaryRecipes(ProductionRecipes);
 export const PrimaryRecipesMap: RecipesMap = generateRecipeMapFromProduct(PrimaryRecipesArray);
-export const AlternateRecipesArray: Recipe[] = reduceAlternateRecipes();
+export const AlternateRecipesArray: RawRecipe[] = reduceAlternateRecipes(ProductionRecipes);
 export const AlternateRecipesMap: RecipesMap = generateRecipeMapFromProduct(AlternateRecipesArray);
 export const PrimaryItemsCompleixty: ItemsComplexityMap = markComplexity(PrimaryRecipesMap);
 
@@ -26,15 +27,36 @@ export const PrimaryItemsCompleixty: ItemsComplexityMap = markComplexity(Primary
  * Ammo
  * 
  * + additional excludes
- * **Unpackaged**
+ * **Unpackage**
  */
 
-function reducePrimaryRecipes(): RawRecipe[] {
-    return Object.values(_RECIPES).filter(recipe=>!recipe.isAlternate).filter(recipe=>!recipe.recipe.includes("Unpackage"));
+function filterNonProductionRecipes(recipes: RawRecipe[]): RawRecipe[] {
+    const exclude_list = [
+        "Alien DNA Capsule",
+        "Protein",
+        "Beacon",
+        "Biomass",
+        "Color Cartridge",
+        "The HUB",
+        "Nobelisk",
+        "Power Shard",
+        "Rebar",
+        "Ammo",
+        "Unpackage"
+    ]
+    function containsExcludeList(name: string): boolean {
+        return exclude_list.map(exc=>name.includes(exc)).reduce((a,b)=>a||b, false)
+    }
+    
+    return recipes.filter(recipe => !containsExcludeList(recipe.recipe))
 }
 
-function reduceAlternateRecipes(): RawRecipe[] {
-    return Object.values(_RECIPES).filter(recipe=>recipe.isAlternate);
+function reducePrimaryRecipes(recipes: RawRecipe[]): RawRecipe[] {
+    return recipes.filter(recipe=>!recipe.isAlternate).filter(recipe=>!recipe.recipe.includes("Unpackage"));
+}
+
+function reduceAlternateRecipes(recipes: RawRecipe[]): RawRecipe[] {
+    return recipes.filter(recipe=>recipe.isAlternate);
 }
 
 function generateRecipeMapFromProduct(rawRecipes: RawRecipe[]) {
