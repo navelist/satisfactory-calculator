@@ -2,6 +2,12 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import { dev } from '$app/environment';
+
+	let BASEURL = "";
+	// if (!dev) {
+	// 	BASEURL = "/satisfactory-calculator";
+	// }
 </script>
 
 <header>
@@ -16,11 +22,11 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li aria-current={$page.url.pathname.startsWith('/') ? 'page' : undefined}>
-				<a href="/">Recipe</a>
+			<li aria-current={$page.url.pathname === (BASEURL + '/') ? 'page' : undefined}>
+				<a href={BASEURL+"/"}>Recipe</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/top-down') ? 'page' : undefined}>
-				<a href="/top-down">TOP-DOWN</a>
+			<li aria-current={$page.url.pathname.startsWith(BASEURL+'/top-down') ? 'page' : undefined}>
+				<a href={BASEURL+"/top-down"}>TOP-DOWN</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

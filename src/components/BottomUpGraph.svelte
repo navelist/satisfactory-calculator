@@ -50,7 +50,7 @@
     }
 </script>
 
-<div>
+<div class="top">
     <h2>
         Overall production summary
     </h2>
@@ -82,6 +82,9 @@
 </div>
 
 <style>
+    .top {
+        overflow: auto;
+    }
     h2 {
         font-size:larger;
     }

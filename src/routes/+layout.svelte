@@ -1,7 +1,14 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import { dev } from '$app/environment';
 </script>
+
+<svelte:head>
+	{#if !dev}
+		<base href="https://navelist.github.io/satisfactory-calculator/index.html">
+	{/if}
+</svelte:head>
 
 <div class="app">
 	<Header />
